@@ -1,0 +1,32 @@
+/*
+  Global styles for the Doubletick Assessment application. You can
+  organize your styles into the src/styles folder as the project grows,
+  but keep this file imported in your entry point (main.jsx) so that
+  global styles are applied.
+*/
+
+/* Reset some default margins and paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fdfdfd;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app-container {
+  max-width: 1500px;
+  width:100%;
+  margin: 0 auto;
+  padding: 2rem;
+}

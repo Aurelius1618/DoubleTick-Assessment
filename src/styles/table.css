@@ -1,0 +1,70 @@
+/* CustomerTable styles */
+
+/* Container provides scrollable viewport for large data sets */
+/* Container wraps the table and allows it to expand naturally. We avoid
+ * constraining the height here so that the page itself can scroll. This
+ * ensures the window scroll listener (useInfiniteScroll) will trigger when
+ * the user reaches the bottom of the document.
+ */
+.customer-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Base table styling */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+/* Column width adjustments to prevent overlap */
+.customer-table th:nth-child(1),
+.customer-table td:nth-child(1) {
+  width: 60px; /* Avatar column */
+}
+
+.customer-table th:nth-child(2),
+.customer-table td:nth-child(2) {
+  width: 15%; /* Name column */
+}
+
+.customer-table th:nth-child(3),
+.customer-table td:nth-child(3) {
+  width: 20%; /* Email column - increased width */
+}
+
+.customer-table th:nth-child(4),
+.customer-table td:nth-child(4) {
+  width: 20%; /* Score column - shifted right naturally */
+}
+
+/* Sticky header: stays at the top when scrolling */
+.customer-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Hover effect on table rows */
+.customer-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Avatar styling */
+.customer-table .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "doubletick-assessment",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A React assessment project scaffolded with Vite.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+    ,
+    "@faker-js/faker": "^8.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.0",
+    "vite": "^5.0.0"
+  }
+}

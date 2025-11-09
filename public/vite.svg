@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    A simple placeholder icon inspired by the Vite logo. If you wish to replace
+    this with an official logo or your own branding, drop your SVG in this
+    location and update the favicon link in index.html accordingly.
+  -->
+  <path d="M32 0L64 64H0L32 0Z" fill="#646cff" />
+  <circle cx="32" cy="32" r="8" fill="#ffd166" />
+</svg>
